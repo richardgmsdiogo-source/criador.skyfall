@@ -1,0 +1,476 @@
+{
+  "legados": [
+    {
+      "id": "anuro",
+      "nome": "Anuro",
+      "descricao": "Sapos-humanoides abraçados pela Caridade, exploradores curiosos",
+      "deusa": "Caridade",
+      "melancolia": "Peso do Coração",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "bufonin",
+          "nome": "Bufonin",
+          "descricao": "Corpo forte e resistente, feito para aguentar pancada e intimidar.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Corpo Forte: deslocamento de salto +3m",
+            "Corpo Inflável: pode usar a habilidade Inflar",
+            "Inflar: recebe vantagem em testes de CAR (Intimidação/Diplomacia), ataques corpo a corpo aumentam alcance em +1.5m"
+          ]
+        },
+        {
+          "id": "ranin",
+          "nome": "Ranin",
+          "descricao": "Corpo pequeno, leve e ágil, ideal para infiltração e mobilidade.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Corpo Ágil: deslocamento de escalada 9m",
+            "Pele Venenosa: resistência a dano venenoso",
+            "Catalisador Epidérmico: pode usar a habilidade Produzir Soro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draco",
+      "nome": "Draco",
+      "descricao": "Humanoides draconianos com herança divina e sopro elemental.",
+      "deusa": "Titã Desconhecida",
+      "melancolia": "Sede por poder",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "draco_chama",
+          "nome": "Linhagem de Chama",
+          "descricao": "Herança ligada ao fogo e à destruição controlada.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sopro Ígneo: pode exalar um cone curto de fogo (dano moderado, recarga por descanso curto/longa, a combinar com o mestre).",
+            "Resistência ao Fogo: recebe resistência a dano de fogo.",
+            "Olhar Ardente: vantagem em testes de Intimidação quando usar a herança de fogo como destaque."
+          ]
+        },
+        {
+          "id": "draco_tempestade",
+          "nome": "Linhagem de Tempestade",
+          "descricao": "Herança ligada a trovões, ventos e mudança súbita.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sopro Trovejante: pode exalar um jato de ar/trovão que empurra ou derruba (efeito exato a combinar).",
+            "Resistência a Trovão/Relâmpago: resistência a um tipo de dano elétrico/sonoro.",
+            "Sentido de Tormenta: percebe mudanças climáticas e tensões no ambiente com mais facilidade."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elfe",
+      "nome": "Elfe",
+      "descricao": "Criaturas esguias e elegantes, ligadas a cortes feéricas e à estética.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Capricho compulsivo",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "corte_luz",
+          "nome": "Corte da Luz",
+          "descricao": "Ligação com uma corte luminosa, inspiradora e altiva.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Aura Inspiradora: aliados próximos recebem pequeno bônus em testes sociais quando você lidera a conversa.",
+            "Graça Impecável: vantagem em testes para se apresentar em público (dança, canto, etiqueta).",
+            "Olhos Irradiantes: enxerga melhor em ambientes claros, percebe detalhes estéticos com facilidade."
+          ]
+        },
+        {
+          "id": "corte_sombras",
+          "nome": "Corte das Sombras",
+          "descricao": "Ligação com uma corte noturna, cheia de segredos e intrigas.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Passos Silenciosos: vantagem em testes para se mover sem ser notado em penumbra ou escuridão leve.",
+            "Sussurros Velados: facilidade para blefar, segurar informação e perceber mentiras.",
+            "Olhos na Penumbra: visão em ambientes pouco iluminados é melhor que a de humanos comuns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gnomo",
+      "nome": "Gnomo",
+      "descricao": "Pequenos seres engenhosos com forte ligação a um ânima animal.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Gula Fútil",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "gnomo_predador",
+          "nome": "Ânima Predador",
+          "descricao": "Seu ânima lembra um caçador feroz, focado em perseguição e ataque.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Instinto de Caça: bônus em testes para rastrear ou perseguir alvos.",
+            "Mordida ou Garras Naturais: ataque desarmado um pouco melhor que o normal.",
+            "Foco na Presa: vantagem em um teste por cena contra uma criatura que você esteja perseguindo ativamente."
+          ]
+        },
+        {
+          "id": "gnomo_escavador",
+          "nome": "Ânima Escavadora",
+          "descricao": "Seu ânima lembra um animal que fuça, cava e mexe em tudo.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Mãozinhas Inquietas: bônus em testes de Ofício, Ferramentas ou similares para mexer em bugigangas.",
+            "Farejador de Tesouros: vantagem ocasional para encontrar passagens secretas, compartimentos ocultos ou esconderijos.",
+            "Baixo e Miúdo: mais difícil de ser notado em multidões ou ambientes cheios de coisas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "humani",
+      "nome": "Humani",
+      "descricao": "Humanoides versáteis e adaptáveis, que se moldam ao mundo.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Ambição",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "humani_versatil",
+          "nome": "Versatilidade Nata",
+          "descricao": "Você se adapta rápido a qualquer função do grupo.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Talento Extra: ganha uma proficiência adicional (perícia, ferramenta ou arma, a combinar).",
+            "Aprendiz Rápido: testes repetidos em uma mesma tarefa ficam um pouco mais fáceis com o tempo.",
+            "Flexível Socialmente: bônus pequeno em testes sociais quando você se esforça para se misturar."
+          ]
+        },
+        {
+          "id": "humani_obstinado",
+          "nome": "Determinação Obstinada",
+          "descricao": "Você simplesmente se recusa a desistir.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Força de Vontade: uma vez por descanso, pode repetir um teste importante que tenha falhado (a combinar com o mestre).",
+            "Resistência Mental: pequeno bônus contra efeitos de medo, charme ou desespero.",
+            "Fôlego Extra: em cenas longas, resiste melhor a fadiga/condições exaustivas."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kishin",
+      "nome": "Kishin",
+      "descricao": "Seres espirituais com conexão ao arcano e ao mundo dos mortos.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Fúria em chamas",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "kishin_oraculo",
+          "nome": "Eco de Oráculo",
+          "descricao": "Sua alma ressoa com presságios e visões estranhas.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sussurros do Além: recebe flashes visuais ou auditivos como pistas sobrenaturais, a critério do mestre.",
+            "Olhar Penetrante: bônus em testes para perceber mentiras ou intenções ocultas.",
+            "Fardo de Saber Demais: às vezes sofre pequenos efeitos colaterais por enxergar demais (narrativo)."
+          ]
+        },
+        {
+          "id": "kishin_psicopompo",
+          "nome": "Guia dos Mortos",
+          "descricao": "Você serve como ponte entre vivos e mortos.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sensibilidade a Espíritos: sente presenças sobrenaturais próximas.",
+            "Ritos Funerários: sabe conduzir cerimoniais que acalmam mortos ou lembranças inquietas.",
+            "Língua dos Que Partiram: consegue se comunicar limitadamente com ecos de pessoas falecidas (via narração)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sanguir",
+      "nome": "Sanguir",
+      "descricao": "Criaturas noturnas com sangue alterado, ligadas à vitae e a Warpinier.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Persona non grata",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "sanguir_byotr",
+          "nome": "Herança Byotr",
+          "descricao": "Foco em alquimia de sangue e aprimoramento de equipamentos.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Alquimia de Vitae: consegue temporariamente melhorar uma arma com efeitos especiais usando o próprio sangue.",
+            "Olhos de Laboratório: bônus em testes ligados a alquimia, magitec ou análise de substâncias.",
+            "Marca de Sangue: consegue reconhecer rastros ou resquícios de sangue que tenham relação com seus rituais."
+          ]
+        },
+        {
+          "id": "sanguir_shtarik",
+          "nome": "Herança Shtarik",
+          "descricao": "Foco em caça, perseguição e pressão sobre presas feridas.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Superpredador: bônus em testes sociais contra criaturas feridas ou fragilizadas.",
+            "Faro de Sangue: facilidade para seguir rastros de criaturas que já sangraram perto de você.",
+            "Finalizar a Caçada: quando você mesmo está machucado, fica mais perigoso ofensivamente (bônus temporário em ataques)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tatsunoko",
+      "nome": "Tatsunoko",
+      "descricao": "Humanoides com herança dracônica oriental, ligados a rios, nuvens e ciclos.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "O Dever Nunca Reconhecido",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "tatsu_rio",
+          "nome": "Filho do Rio",
+          "descricao": "Ligação com águas correntes e transformações suaves.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Respiração Fluida: facilidade para nadar, prender a respiração e se mover na água.",
+            "Fluxo Adaptável: bônus em testes para se ajustar a mudanças súbitas de plano ou terreno.",
+            "Voz da Água: percebe emoções em ambientes aquáticos (rios, chuvas fortes, cachoeiras)."
+          ]
+        },
+        {
+          "id": "tatsu_nuvem",
+          "nome": "Filho das Nuvens",
+          "descricao": "Ligação com ventos, neblina e linhas de energia no céu.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Passos Leves: mais difícil deixar rastros claros no chão.",
+            "Brisa Mensageira: às vezes recebe sinais sutis trazidos pelo vento (cheiros, sons, partículas).",
+            "Olhar na Altura: facilidade para avaliar rotas em três dimensões (subir, planar, descer)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tora",
+      "nome": "Tôra",
+      "descricao": "Felinos humanoides fortes e ágeis, focados em instinto e liberdade.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "do pó ao pó",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "tora_cacador",
+          "nome": "Caçador Solitário",
+          "descricao": "Predador que age por conta própria, rápido e silencioso.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Garras Felinas: ataque desarmado melhorado para cortar ou rasgar.",
+            "Equilíbrio Felino: bônus em testes de equilíbrio, acrobacia e deslocamento em superfícies estreitas.",
+            "Olhar de Caçador: facilidade para escolher o alvo mais vulnerável numa cena."
+          ]
+        },
+        {
+          "id": "tora_orgulhoso",
+          "nome": "Orgulho de Alcateia",
+          "descricao": "Mesmo livre, você reconhece a importância da ‘matilha’.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Rugido Inspirador: pode incentivar aliados próximos, dando pequeno bônus em testes de coragem.",
+            "Postura Dominante: vantagem ocasional em testes de Intimidação.",
+            "Sentido de Território: percebe invasões ou mudanças estranhas no ambiente que considera “seu”."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urodelo",
+      "nome": "Urodelo",
+      "descricao": "Salamandras humanoides ligadas a venenos, regeneração e segredos.",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Guarda eterna",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "urodelo_regenerador",
+          "nome": "Carne que Rebrota",
+          "descricao": "Seu corpo se regenera mais rápido do que o normal.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Regeneração Lenta: recuperação de pequenas lesões fora de combate é mais rápida.",
+            "Resistência a Toxinas: bônus em testes contra venenos e doenças.",
+            "Corpo Flexível: consegue passar por espaços um pouco menores do que o esperado para seu tamanho."
+          ]
+        },
+        {
+          "id": "urodelo_venenoso",
+          "nome": "Secreções Venenosas",
+          "descricao": "Sua pele e fluidos carregam toxinas naturais.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Contato Incômodo: quem te agarra ou te segura sem proteção pode sofrer efeitos menores de veneno (a combinar).",
+            "Especialista em Venenos: bônus em testes para lidar com substâncias venenosas (criar, identificar, aplicar).",
+            "Cheiro Químico: percebe odores químicos/venenosos que outros ignorariam."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walshie",
+      "nome": "Walshie",
+      "descricao": "Pequenos humanoides vindos do planeta verde Walsh, atravessando uma Porta aberta em Alberich durante a Guerra do Firmamento. Sortudos, inquietos e acostumados a um mundo grande demais para seu tamanho, fazem casa onde quer que consigam manter uma porta aberta.",
+      "deusa": "A Sorte",
+      "melancolia": "Prisioneiro de Si",
+      "deslocamento": 7.5,
+      "herancas": [
+        {
+          "id": "walshie_alpaqueiro",
+          "nome": "Alpaqueiro",
+          "descricao": "Walshies que cresceram em Walsh ou próximos de alpacas e outros camelídeos, vivendo entre rebanhos e vales cheios de lã, cuspes e política local.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Alpavaleiro: conexão natural com camelídeos, sendo capaz de usá-los como montaria e manobrar com segurança em combate.",
+            "Alpacuspe: desenvolveu um cuspe ácido que pode ser usado como ataque à distância de curto alcance.",
+            "Guarda de Rebanho: acostumado a proteger rebanhos, reage rapidamente a perigos que ameacem seus aliados."
+          ]
+        },
+        {
+          "id": "walshie_desbravador",
+          "nome": "Desbravador",
+          "descricao": "Exploradores que atravessaram a Porta para Opath em busca de novos lugares, portas e oportunidades, seguindo os caprichos d’A Sorte.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Intrépido: cobre distâncias maiores em menos tempo e lida melhor com terrenos difíceis durante viagens.",
+            "Destruidor de Joelhos: sabe onde atingir criaturas maiores para derrubá-las mais rápido, causando mais dano em inimigos Médios ou maiores.",
+            "Sorte dos Viajantes: tende a encontrar rotas alternativas, atalhos improváveis e saídas convenientes em situações perigosas."
+          ]
+        }
+      ]
+    }
+  ],
+  "maldicoes": [
+    {
+      "id": "aetherideo",
+      "nome": "Aetherídeo",
+      "descricao": "Cristais de aetherium brotam em seu corpo, tornando-o mais resistente, mas extremamente volátil à magia.",
+      "efeitos": [
+        "Aetherídeo (Maldição): sempre que você for alvo de um ATAQUE com o descritor MÁGICO, esse ataque é realizado com vantagem contra você.",
+        "Resistir à Praga: você inicia a campanha com +3 pontos de vida adicionais e recebe +1 ponto de vida adicional por nível.",
+        "Sangue Mágico: você pode usar a habilidade Combustível Arcano, perdendo 1d4 pontos de vida e ganhando a mesma quantidade em pontos de ênfase temporários (1d6 a partir do 5º nível, 1d8 a partir do 9º), 1 vez por descanso."
+      ]
+    },
+    {
+      "id": "gorgon",
+      "nome": "Górgon",
+      "descricao": "Espíritos-serpente (Eríneas) ligaram-se a você, concedendo um olhar vingativo e um corpo envenenado, mas uma relação perigosa com o próprio reflexo.",
+      "efeitos": [
+        "Górgon (Maldição): você não suporta ver a própria imagem. Sempre que for confrontado com o seu reflexo em cena, fica Paralisado até o final do seu próximo turno (uma criatura em até 9 m pode usar uma ação bônus para forçar esse reflexo com um ataque de DES vs CON).",
+        "Sangue Verde: você é imune a dano VENENOSO. Se já fosse imune, torna-se resistente a dano ÁCIDO.",
+        "Olhos Vingativos das Serpentes: você pode usar a habilidade Olhar Petrificante, um ataque MÁGICO contra CON a 9 m; em caso de acerto, o alvo fica Desorientado até o final do próximo turno (1 vez por descanso longo, sendo considerado proficiente nesse ataque). Em ampliações poderosas, pode escolher Paralisar o alvo em vez de apenas Desorientá-lo."
+      ]
+    },
+    {
+      "id": "retornado",
+      "nome": "Retornado",
+      "descricao": "Você morreu dentro do Refúgio de Ônix e retornou como uma pilha de ossos animada por necromancia, com memórias fragmentadas e um corpo claramente não vivo.",
+      "efeitos": [
+        "Retornado (Maldição): você tem desvantagem em testes de morte. Se for um humani mortalha, joga os dados de morte com desvantagem e registra apenas o menor resultado. Além disso, você é vulnerável a dano CONTUNDENTE.",
+        "Natureza Esquelética: você é imune a dano VENENOSO, à condição Envenenado e não precisa comer ou beber. Seu tipo de criatura muda para Morto-vivo (magias e habilidades que afetem apenas Humanóides não têm efeito em você).",
+        "Força do Além: sempre que você ganhar pontos de vida temporários, pode gastar 1 ponto de ênfase para dobrar a quantidade de pontos de vida temporários recebidos."
+      ]
+    },
+    {
+      "id": "sombrio",
+      "nome": "Sombrio",
+      "descricao": "Sua alma foi prometida à Sombra. Seu corpo carrega traços distorcidos e seu destino está preso a uma entidade de desejos insondáveis.",
+      "efeitos": [
+        "Sombrio (Maldição): sua jornada começa com duas falhas em testes de morte. Ao longo da vida, você pode romper com seu grilhão e apagar uma dessas falhas, no máximo uma vez por nível de personagem.",
+        "Visão no Escuro: você enxerga na escuridão completa como se estivesse em plena luz do dia.",
+        "Presença Sombria: todos os ataques realizados contra você na primeira rodada de uma cena de combate são feitos com desvantagem."
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "combatente",
+      "nome": "Combatente",
+      "descricao": "Usa atributos físicos e técnicas de combate para resolver conflitos.",
+      "atributos_primarios": ["FOR", "DEX"],
+      "pericias_iniciais": 2
+    },
+    {
+      "id": "especialista",
+      "nome": "Especialista",
+      "descricao": "Usa conhecimentos, perícias e artimanhas para superar desafios.",
+      "atributos_primarios": ["INT", "SAB"],
+      "pericias_iniciais": 3
+    },
+    {
+      "id": "ocultista",
+      "nome": "Ocultista",
+      "descricao": "Usuário de magia que manipula forças arcanas para sobreviver e influenciar o mundo.",
+      "atributos_primarios": ["INT", "CAR"],
+      "pericias_iniciais": 2
+    }
+  ],
+  "atributos": [
+    {
+      "id": "FOR",
+      "nome": "Força",
+      "abreviacao": "FOR",
+      "descricao": "Poder físico e capacidade de levantar, puxar ou empurrar."
+    },
+    {
+      "id": "DEX",
+      "nome": "Destreza",
+      "abreviacao": "DEX",
+      "descricao": "Agilidade, equilíbrio e reflexos."
+    },
+    {
+      "id": "RES",
+      "nome": "Resistência",
+      "abreviacao": "RES",
+      "descricao": "Vitalidade, saúde e resistência geral."
+    },
+    {
+      "id": "INT",
+      "nome": "Inteligência",
+      "abreviacao": "INT",
+      "descricao": "Raciocínio, memória e conhecimento formal."
+    },
+    {
+      "id": "SAB",
+      "nome": "Sabedoria",
+      "abreviacao": "SAB",
+      "descricao": "Percepção, intuição e força de vontade."
+    },
+    {
+      "id": "CAR",
+      "nome": "Carisma",
+      "abreviacao": "CAR",
+      "descricao": "Presença, persuasão e liderança."
+    }
+  ],
+  "proficiencias": [
+    { "id": "apresentacao", "nome": "Apresentação" },
+    { "id": "arcanismo", "nome": "Arcanismo" },
+    { "id": "cultura", "nome": "Cultura" },
+    { "id": "doutrinas", "nome": "Doutrinas" },
+    { "id": "diplomacia", "nome": "Diplomacia" },
+    { "id": "furtividade", "nome": "Furtividade" },
+    { "id": "intimidacao", "nome": "Intimidação" },
+    { "id": "intuicao", "nome": "Intuição" },
+    { "id": "medicina", "nome": "Medicina" },
+    { "id": "magitec", "nome": "Magitec" },
+    { "id": "malandragem", "nome": "Malandragem" },
+    { "id": "manipulacao", "nome": "Manipulação" },
+    { "id": "natureza", "nome": "Natureza" },
+    { "id": "percepcao", "nome": "Percepção" },
+    { "id": "preparo_fisico", "nome": "Preparo Físico" }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "legados": [
+    {
+      "id": "anuro",
+      "nome": "Anuro",
+      "descricao": "Sapos-humanoides abraçados pela Caridade, exploradores curiosos",
+      "deusa": "Caridade",
+      "melancolia": "Compulsão pela Descoberta",
+      "deslocamento": 7.5,
+      "heranças": [
+        {
+          "id": "bufonin",
+          "nome": "Bufonin",
+          "descricao": "Corpo forte e resistente",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Corpo Forte: deslocamento de salto +3m",
+            "Corpo Inflável: pode usar a habilidade Inflar",
+            "Inflar: recebe vantagem em testes de CAR (Intimidação/Diplomacia), ataques aumentam alcance +1.5m"
+          ]
+        },
+        {
+          "id": "ranin",
+          "nome": "Ranin",
+          "descricao": "Corpo pequeno e ágil",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Corpo Ágil: deslocamento de escalada 9m",
+            "Pele Venenosa: resistência a dano venenoso",
+            "Catalisador Epidérmico: pode usar habilidade Produzir Soro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "draco",
+      "nome": "Draco",
+      "descricao": "Humanoides draconianos com herança divina",
+      "deusa": "Titã Desconhecida",
+      "melancolia": "Compulsão pelo Poder",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "elfe",
+      "nome": "Elfe",
+      "descricao": "Criaturas esguias e elegantes",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pelo Belo",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "gnomo",
+      "nome": "Gnomo",
+      "descricao": "Pequenos seres engenhosos",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Criação",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "humani",
+      "nome": "Humani",
+      "descricao": "Humanoides versáteis e adaptáveis",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Ambição",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "kishin",
+      "nome": "Kishin",
+      "descricao": "Seres espirituais com conexão ao arcano",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Verdade",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "sanguir",
+      "nome": "Sanguir",
+      "descricao": "Criaturas noturnas com sede de sangue",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Imortalidade",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "tatsunoko",
+      "nome": "Tatsunoko",
+      "descricao": "Humanoides com herança dracônica oriental",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pelo Equilíbrio",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "tora",
+      "nome": "Tôra",
+      "descricao": "Felinos humanoides fortes e ágeis",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Liberdade",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "urodelo",
+      "nome": "Urodelo",
+      "descricao": "Salamandras humanoides",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Transformação",
+      "deslocamento": 7.5,
+      "heranças": []
+    },
+    {
+      "id": "walshie",
+      "nome": "Walshie",
+      "descricao": "Criaturas aquáticas humanoides",
+      "deusa": "Deusa Desconhecida",
+      "melancolia": "Compulsão pela Profundidade",
+      "deslocamento": 7.5,
+      "heranças": []
+    }
+  ],
+  "maldicoes": [
+    {
+      "id": "aetherideo",
+      "nome": "Aetherídeo",
+      "descricao": "Cristais de aetherium crescem em seu corpo, tornando-o mais forte mas volátil com magia",
+      "efeitos": [
+        "Cristais azulados manifestam-se pela pele",
+        "Corpo mais forte e resistente",
+        "Efeitos de magia amplificados (positivos e negativos)",
+        "Não pode usar aetherium para modificações permanentes de magia"
+      ]
+    },
+    {
+      "id": "gorgon",
+      "nome": "Górgon",
+      "descricao": "Amaldiçoado com a maldição de transformar em pedra",
+      "efeitos": []
+    },
+    {
+      "id": "retornado",
+      "nome": "Retornado",
+      "descricao": "Volta do além-mar com memórias fragmentadas",
+      "efeitos": []
+    },
+    {
+      "id": "sombrio",
+      "nome": "Sombrio",
+      "descricao": "Envolvido pela escuridão do além",
+      "efeitos": []
+    }
+  ],
+  "classes": [
+    {
+      "id": "combatente",
+      "nome": "Combatente",
+      "descricao": "Usa atributos físicos e técnicas de combate",
+      "atributos_primarios": ["FOR", "DEX"],
+      "pericias_iniciais": 2
+    },
+    {
+      "id": "especialista",
+      "nome": "Especialista",
+      "descricao": "Usa conhecimentos e artimanhas para superar desafios",
+      "atributos_primarios": ["INT", "SAB"],
+      "pericias_iniciais": 3
+    },
+    {
+      "id": "ocultista",
+      "nome": "Ocultista",
+      "descricao": "Usuário de magia que usa poderes arcanos para sobreviver",
+      "atributos_primarios": ["INT", "CAR"],
+      "pericias_iniciais": 2
+    }
+  ],
+  "atributos": [
+    {
+      "id": "FOR",
+      "nome": "Força",
+      "abreviacao": "FOR",
+      "descricao": "Poder físico e capacidade de levantar/empurrar"
+    },
+    {
+      "id": "DEX",
+      "nome": "Destreza",
+      "abreviacao": "DEX",
+      "descricao": "Agilidade, equilíbrio e reflexos"
+    },
+    {
+      "id": "RES",
+      "nome": "Resistência",
+      "abreviacao": "RES",
+      "descricao": "Vitalidade, saúde e resistência"
+    },
+    {
+      "id": "INT",
+      "nome": "Inteligência",
+      "abreviacao": "INT",
+      "descricao": "Raciocínio, memória e conhecimento"
+    },
+    {
+      "id": "SAB",
+      "nome": "Sabedoria",
+      "abreviacao": "SAB",
+      "descricao": "Percepção, intuição e vontade"
+    },
+    {
+      "id": "CAR",
+      "nome": "Carisma",
+      "abreviacao": "CAR",
+      "descricao": "Presença, persuasão e liderança"
+    }
+  ]
+}
