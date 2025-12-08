@@ -6,6 +6,7 @@
       "descricao": "Sapos-humanoides abraçados pela Caridade, exploradores curiosos",
       "deusa": "Caridade",
       "melancolia": "Peso do Coração",
+      "desc.melancolia": "Você não consegue entender o valor material das coisas. Para você, tudo se resume aos seus sentimentos e percepções.",
       "deslocamento": 7.5,
       "herancas": [
         {
@@ -35,31 +36,65 @@
     {
       "id": "draco",
       "nome": "Draco",
-      "descricao": "Humanoides draconianos com herança divina e sopro elemental.",
-      "deusa": "Titã Desconhecida",
-      "melancolia": "Sede por poder",
-      "deslocamento": 7.5,
+      "descricao": "Criaturas humanoides geradas de ovos dracônicos sonhados no Arcanum. Carregam em suas escamas e no sopro a herança de um grande Dragão, junto com uma ganância difícil de controlar.",
+      "deusa": "O Monitor",
+      "melancolia": "Sede por Poder",
+      "desc.melancolia": "Você é ganancioso. Pode ser ouro, conhecimento, influência ou status — pouco importa. Sonha grande e sente que precisa possuir aquilo que deseja, custe o que custar. Essa sede o empurra para aventuras, mas também pode consumi-lo por completo.",
+      "deslocamento": 9,
       "herancas": [
         {
-          "id": "draco_chama",
-          "nome": "Linhagem de Chama",
-          "descricao": "Herança ligada ao fogo e à destruição controlada.",
+          "id": "draco_azul",
+          "nome": "Escamas Azuis",
+          "descricao": "Escamas azuis com reflexos prateados ou arroxeados, lembrando tempestades e descargas do Arcanum.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Sopro Ígneo: pode exalar um cone curto de fogo (dano moderado, recarga por descanso curto/longa, a combinar com o mestre).",
-            "Resistência ao Fogo: recebe resistência a dano de fogo.",
-            "Olhar Ardente: vantagem em testes de Intimidação quando usar a herança de fogo como destaque."
+            "Sangue Elétrico: afinidade com trovões, raios e descargas; você lida melhor com dano elétrico.",
+            "Sopro Tempestuoso: seu sopro dracônico assume forma de relâmpagos e rajadas que sacodem e reposicionam inimigos.",
+            "Arcanum de Fofuxa: você sente uma vocação natural para truques mágicos e pequenas manifestações arcanas."
           ]
         },
         {
-          "id": "draco_tempestade",
-          "nome": "Linhagem de Tempestade",
-          "descricao": "Herança ligada a trovões, ventos e mudança súbita.",
+          "id": "draco_preto",
+          "nome": "Escamas Pretas",
+          "descricao": "Escamas negras com reflexos esverdeados, marcadas por energia necrosante e segredos antigos.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Sopro Trovejante: pode exalar um jato de ar/trovão que empurra ou derruba (efeito exato a combinar).",
-            "Resistência a Trovão/Relâmpago: resistência a um tipo de dano elétrico/sonoro.",
-            "Sentido de Tormenta: percebe mudanças climáticas e tensões no ambiente com mais facilidade."
+            "Sangue Necrótico: seu corpo resiste melhor a energias ligadas à decadência e à morte.",
+            "Sopro Envenenado: seu sopro carrega miasma e corrupção, enfraquecendo ou envenenando aqueles que atinge.",
+            "Marca de Brunhil: você parece precisar menos de necessidades básicas, como respirar, comer ou beber, do que outras criaturas."
+          ]
+        },
+        {
+          "id": "draco_branco",
+          "nome": "Escamas Brancas",
+          "descricao": "Escamas pálidas que se confundem com neve e gelo, ligadas a territórios gélidos e à frieza dracônica.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sangue Frio: você suporta frio intenso com mais facilidade.",
+            "Sopro Gélido: seu sopro congela, reduzindo a mobilidade dos alvos e expondo brechas na defesa.",
+            "Arcanum de Khulan: você tem facilidade com conhecimento formal — história, religião, diplomacia e tradições."
+          ]
+        },
+        {
+          "id": "draco_verde",
+          "nome": "Escamas Verdes",
+          "descricao": "Escamas em diversos tons de verde, brilhantes e flexíveis, ligadas a veneno, acidez e controle de terreno.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sangue Ácido: seu corpo resiste bem a substâncias corrosivas.",
+            "Sopro Corrosivo: seu sopro dracônico derrete proteções e expõe a resistência física dos alvos.",
+            "Arcanum de Dom Guilherme: você tem uma relação estranha com o ambiente e raramente é realmente travado por terreno difícil."
+          ]
+        },
+        {
+          "id": "draco_vermelho",
+          "nome": "Escamas Vermelhas",
+          "descricao": "Escamas rubras, visíveis à distância, que carregam o fogo clássico dos grandes Dragões.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Sangue Ígneo: você é especialmente resistente a chamas e calor intenso.",
+            "Sopro Ígneo: seu sopro é um jorro de fogo concentrado, capaz de incendiar tudo ao redor.",
+            "Arcanum de Talyiesin: você tem uma inclinação natural para armas marciais e estilos de combate agressivos."
           ]
         }
       ]
@@ -67,31 +102,65 @@
     {
       "id": "elfe",
       "nome": "Elfe",
-      "descricao": "Criaturas esguias e elegantes, ligadas a cortes feéricas e à estética.",
-      "deusa": "Deusa Desconhecida",
+      "descricao": "Criaturas feéricas vindas de Sa’Al, moldadas pela titã Sa’Al’Lima. Diverses em forma, cor e expressão, elfes assumem traços ainda mais marcantes quando ligados às Cortes das Estações — ou seguem a vida como Sem-Corte, espalhando-se por todo Opath.",
+      "deusa": "Sa’Al’Lima",
       "melancolia": "Capricho compulsivo",
-      "deslocamento": 7.5,
+      "desc.melancolia": "Existe algo, seja físico ou um conceito, que você considera o belo acima de tudo — flores, sonhos, ouro, lembranças, segredos ou até o último suspiro de alguém. Você sente necessidade de consumir esse belo, de algum jeito, e isso pode te colocar em situações perigosas ou moralmente complicadas.",
+      "deslocamento": 9,
       "herancas": [
         {
-          "id": "corte_luz",
-          "nome": "Corte da Luz",
-          "descricao": "Ligação com uma corte luminosa, inspiradora e altiva.",
+          "id": "elfe_verao",
+          "nome": "Corte do Verão",
+          "descricao": "Burocratas arcanos da feéria: lidam com contratos, rituais e formalidades mágicas com uma elegância quase irritante.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Aura Inspiradora: aliados próximos recebem pequeno bônus em testes sociais quando você lidera a conversa.",
-            "Graça Impecável: vantagem em testes para se apresentar em público (dança, canto, etiqueta).",
-            "Olhos Irradiantes: enxerga melhor em ambientes claros, percebe detalhes estéticos com facilidade."
+            "Procedimento Arcano: você tem afinidade natural com truques e magias simples, tratando magia como parte do cotidiano.",
+            "Ritos e Documentos: lida bem com regras, contratos, protocolos e liturgias arcanas.",
+            "Postura de Corte: seu jeito carrega a autoridade de quem já discutiu com entidades feéricas em mesas de negociação."
           ]
         },
         {
-          "id": "corte_sombras",
-          "nome": "Corte das Sombras",
-          "descricao": "Ligação com uma corte noturna, cheia de segredos e intrigas.",
+          "id": "elfe_outono",
+          "nome": "Corte do Outono",
+          "descricao": "Ligada aos oceanos de Opath, essa corte adapta corpos feéricos para mares profundos, correntes traiçoeiras e cidades costeiras.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Passos Silenciosos: vantagem em testes para se mover sem ser notado em penumbra ou escuridão leve.",
-            "Sussurros Velados: facilidade para blefar, segurar informação e perceber mentiras.",
-            "Olhos na Penumbra: visão em ambientes pouco iluminados é melhor que a de humanos comuns."
+            "Filhe do Mar: você se adapta com naturalidade à água, seja respirando, nadando ou combatendo em ambientes aquáticos.",
+            "Armas de Nácar: recebe e valoriza equipamentos feitos de nácar, ligados à sua iniciação na corte.",
+            "Chamado das Profundezas: sente-se em casa em portos, navios e costas, onde outros veem apenas perigo ou desconforto."
+          ]
+        },
+        {
+          "id": "elfe_inverno",
+          "nome": "Corte do Inverno",
+          "descricao": "Voltada para treinamento militar e disciplina marcial, a Corte do Inverno prepara elfes para conflitos longos e estratégicos.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Estilo Marcial: você tem uma base sólida de técnicas de combate e postura de campo de batalha.",
+            "Armas da Corte: acostumade a treinar com armas marciais, vê o combate como parte do ofício.",
+            "Frieza Tática: tende a encarar lutas e conflitos com olhar calculado, focando em eficiência e resultado."
+          ]
+        },
+        {
+          "id": "elfe_primavera",
+          "nome": "Corte da Primavera",
+          "descricao": "Conectada às forças naturais e às árvores ancestrais de Sarfo, essa corte mistura delicadeza floral com resistência de casca.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Pele de Casca: seu corpo ganha um aspecto levemente endurecido, como se a natureza o protegesse.",
+            "Laço com o Ambiente: você suporta melhor os efeitos de ambientes hostis — frio, calor, tempestades, terrenos cruéis.",
+            "Espíritos Verdes: sente com mais clareza a presença de forças naturais, florestas vivas e lugares sagrados."
+          ]
+        },
+        {
+          "id": "elfe_sem_corte",
+          "nome": "Sem-Corte",
+          "descricao": "A grande maioria dos elfes não pertence a nenhuma corte — vivem no meio do povo, correndo, trabalhando e improvisando.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Graça Titânica: você se move com leveza e equilíbrio, como se o mundo fosse seu parque de escalada.",
+            "Treinamento do Povo: aprende aptidões práticas — ofícios, ferramentas, armas simples ou armaduras leves — para sobreviver no dia a dia.",
+            "Rosto em Todo Lugar: é fácil imaginar que você tem parentes, contatos e conhecidos em praticamente qualquer cidade."
           ]
         }
       ]
@@ -99,31 +168,85 @@
     {
       "id": "gnomo",
       "nome": "Gnomo",
-      "descricao": "Pequenos seres engenhosos com forte ligação a um ânima animal.",
-      "deusa": "Deusa Desconhecida",
+      "descricao": "Pequenos seres vindos de Sa’Al, marcados por um ânima animal que os acompanha desde o nascimento. Seu corpo vai assumindo traços mamíferos conforme cede à melancolia.",
+      "deusa": "Sa’Al’Lima",
       "melancolia": "Gula Fútil",
+      "desc.melancolia": "Você tem uma compulsão por acumular e esconder algo muito específico. Essa mania de catar e enterrar coisas pode fazê-lo esquecer do mundo exterior e, pouco a pouco, assumir o corpo e os instintos do seu ânima.",
       "deslocamento": 7.5,
       "herancas": [
         {
           "id": "gnomo_predador",
-          "nome": "Ânima Predador",
-          "descricao": "Seu ânima lembra um caçador feroz, focado em perseguição e ataque.",
-          "tamanho": "Pequeno",
+          "tipo": "maior",
+          "nome": "Predador",
+          "descricao": "Sua essência é a caça: você avança rápido em direção à presa e transforma movimento em oportunidade de ataque.",
           "caracteristicas": [
-            "Instinto de Caça: bônus em testes para rastrear ou perseguir alvos.",
-            "Mordida ou Garras Naturais: ataque desarmado um pouco melhor que o normal.",
-            "Foco na Presa: vantagem em um teste por cena contra uma criatura que você esteja perseguindo ativamente."
+            "Caça Predatória: você pode usar uma técnica de investida, movendo até metade do seu deslocamento em direção a uma criatura que possa ver; se terminar adjacente a um inimigo, pode realizar um Ataque corpo a corpo com uma arma que esteja empunhando como ação livre leve (L)."
           ]
         },
         {
-          "id": "gnomo_escavador",
-          "nome": "Ânima Escavadora",
-          "descricao": "Seu ânima lembra um animal que fuça, cava e mexe em tudo.",
-          "tamanho": "Pequeno",
+          "id": "gnomo_dentes_afiados",
+          "tipo": "maior",
+          "nome": "Dentes Afiados",
+          "descricao": "Seus dentes são armas tanto quanto qualquer lâmina — você morde para matar.",
           "caracteristicas": [
-            "Mãozinhas Inquietas: bônus em testes de Ofício, Ferramentas ou similares para mexer em bugigangas.",
-            "Farejador de Tesouros: vantagem ocasional para encontrar passagens secretas, compartimentos ocultos ou esconderijos.",
-            "Baixo e Miúdo: mais difícil de ser notado em multidões ou ambientes cheios de coisas."
+            "Arma Natural: seus dentes funcionam como armas naturais com os descritores ARMA, LEVE e LETAL.",
+            "Dano da Mordida: sua mordida causa 1d6 pontos de dano PERFURANTE."
+          ]
+        },
+        {
+          "id": "gnomo_couraca",
+          "tipo": "maior",
+          "nome": "Couraça",
+          "descricao": "Sua pele é grossa como couro endurecido, feita para suportar pancada atrás de pancada.",
+          "caracteristicas": [
+            "Pele Endurecida: sua pele funciona como uma proteção natural.",
+            "Redução Aumentada: você recebe +1 na sua redução de dano."
+          ]
+        },
+        {
+          "id": "gnomo_corredor",
+          "tipo": "menor",
+          "nome": "Corredor",
+          "descricao": "Seu ânima é rápido e inquieto, feito para disparar em linha reta e cobrir terreno em pouco tempo.",
+          "caracteristicas": [
+            "Passos Velozes: você aumenta o seu deslocamento em +3 m (2 quadrados)."
+          ]
+        },
+        {
+          "id": "gnomo_camuflagem",
+          "tipo": "menor",
+          "nome": "Camuflagem",
+          "descricao": "Seu ânima sabe sumir no cenário: mato alto, entulho, sombras ou multidões, você se mistura em tudo.",
+          "caracteristicas": [
+            "Misturar-se ao Ambiente: você recebe vantagem em testes relacionados à Furtividade quando tenta se camuflar no terreno ao redor."
+          ]
+        },
+        {
+          "id": "gnomo_escalador",
+          "tipo": "menor",
+          "nome": "Escalador",
+          "descricao": "Seu ânima gosta de paredes, troncos, rochas e estruturas altas — subir é quase instintivo.",
+          "caracteristicas": [
+            "Subida Instintiva: você pode escalar com velocidade igual ao seu deslocamento normal."
+          ]
+        },
+        {
+          "id": "gnomo_membros_alongados",
+          "tipo": "menor",
+          "nome": "Membros Alongados",
+          "descricao": "Seus membros são feitos para agarrar e não soltar, mesmo quando a presa é bem maior que você.",
+          "caracteristicas": [
+            "Alcance Surpreendente: você é capaz de agarrar criaturas de tamanho até Grande.",
+            "Estrangulador: você causa +1d6 pontos de dano adicional em ataques contra criaturas que estejam Agarradas por você."
+          ]
+        },
+        {
+          "id": "gnomo_oportunista",
+          "tipo": "menor",
+          "nome": "Oportunista",
+          "descricao": "Seu ânima vive de brechas: você ataca exatamente quando o outro vacila.",
+          "caracteristicas": [
+            "Ataque de Brecha: você tem vantagem em todos os ATAQUES realizados como reação."
           ]
         }
       ]
@@ -131,31 +254,32 @@
     {
       "id": "humani",
       "nome": "Humani",
-      "descricao": "Humanoides versáteis e adaptáveis, que se moldam ao mundo.",
-      "deusa": "Deusa Desconhecida",
-      "melancolia": "Compulsão pela Ambição",
+      "descricao": "Filhos do Arquipélago de Huma e da República de Wam’Mawina, humanis são versáteis, comunicativos e espalhados por quase todo o continente. Sua memória e tradição oral fazem deles guardiões de histórias, promessas e segredos.",
+      "deusa": "A Morte / A Maré",
+      "melancolia": "Morte (Mortalha) ou Maré (Maresia)",
+      "desc.melancolia": "Diferente de outros legados, a melancolia dos humani é herdada de sua herança. Alguns são abraçados pel’A Morte, obcecados em concluir ciclos e aceitar o fim. Outros são marcados pel’A Maré, incapazes de suportar estagnação e sempre empurrando o mundo ao redor para o movimento. Pense em como esse chamado — pelo fim ou pela mudança — afeta sua família, laços e objetivos.",
       "deslocamento": 7.5,
       "herancas": [
         {
-          "id": "humani_versatil",
-          "nome": "Versatilidade Nata",
-          "descricao": "Você se adapta rápido a qualquer função do grupo.",
+          "id": "humani_mortalha",
+          "nome": "Herança Mortalha — Inexorável",
+          "descricao": "Você foi abraçado pel’A Morte. Enxerga tudo como um ciclo que precisa, inevitavelmente, chegar ao fim — inclusive pessoas, promessas e histórias.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Talento Extra: ganha uma proficiência adicional (perícia, ferramenta ou arma, a combinar).",
-            "Aprendiz Rápido: testes repetidos em uma mesma tarefa ficam um pouco mais fáceis com o tempo.",
-            "Flexível Socialmente: bônus pequeno em testes sociais quando você se esforça para se misturar."
+            "Inexorável: você leva a sério a ideia de 'terminar o que começou'; situações em que você precisa concluir algo podem render momentos dramáticos e catarse.",
+            "A Morte é Minha Companheira: ao criar a personagem, você registra resultados de testes de morte que não podem ser alterados por habilidades ou magia, refletindo o peso do abraço d’A Morte.",
+            "Mortalha Energizante: uma vez por descanso, quando uma criatura próxima morre, você recebe uma quantidade de pontos de ênfase temporários baseada no seu bônus de proficiência."
           ]
         },
         {
-          "id": "humani_obstinado",
-          "nome": "Determinação Obstinada",
-          "descricao": "Você simplesmente se recusa a desistir.",
+          "id": "humani_maresia",
+          "nome": "Herança Maresia — Como a Maré",
+          "descricao": "Você foi escolhido pel’A Maré. Estagnação é quase um veneno: ficar preso no mesmo lugar, grupo ou rotina contraria tudo o que você é.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Força de Vontade: uma vez por descanso, pode repetir um teste importante que tenha falhado (a combinar com o mestre).",
-            "Resistência Mental: pequeno bônus contra efeitos de medo, charme ou desespero.",
-            "Fôlego Extra: em cenas longas, resiste melhor a fadiga/condições exaustivas."
+            "Como a Maré: você busca constantemente mudança e movimento; provocar alterações em seu entorno pode gerar momentos dramáticos e catarse.",
+            "Lobo do Mar: você é especialmente competente em navegação e situações ligadas ao mar, águas correntes e viagens, agindo com muito mais segurança nesse tipo de cena.",
+            "Maúna Maior: as marcas d’A Maré se manifestam em sua pele. Você escolhe um talento 'Maúna' (Caravela, Iguana, Polvo ou Tubarão) da lista de talentos dos humani e recebe seus benefícios."
           ]
         }
       ]
@@ -163,31 +287,65 @@
     {
       "id": "kishin",
       "nome": "Kishin",
-      "descricao": "Seres espirituais com conexão ao arcano e ao mundo dos mortos.",
-      "deusa": "Deusa Desconhecida",
-      "melancolia": "Fúria em chamas",
+      "descricao": "Forjados pel’A Ordem para rivalizar dragões e depois abraçados pel’A Fúria, kishins carregam disciplina rígida e um coração pronto para explodir em chamas.",
+      "deusa": "A Ordem / A Fúria",
+      "melancolia": "Fúria em Chamas",
+      "desc.melancolia": "Você é cria d’A Fúria. Sua ira ferve rápido e, quando explode, pode ameaçar inimigos e aliados. Equilibrar explosão e controle é parte do seu drama pessoal.",
       "deslocamento": 7.5,
       "herancas": [
         {
-          "id": "kishin_oraculo",
-          "nome": "Eco de Oráculo",
-          "descricao": "Sua alma ressoa com presságios e visões estranhas.",
+          "id": "kishin_fenix",
+          "nome": "Fênix (família)",
+          "descricao": "Ligada a ritos de vida e morte, a família Fênix caminha na fronteira entre o fim e a renovação.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Sussurros do Além: recebe flashes visuais ou auditivos como pistas sobrenaturais, a critério do mestre.",
-            "Olhar Penetrante: bônus em testes para perceber mentiras ou intenções ocultas.",
-            "Fardo de Saber Demais: às vezes sofre pequenos efeitos colaterais por enxergar demais (narrativo)."
+            "Resiliência Espiritual: sua ligação com vida e morte o torna mais resistente a energias sobrenaturais ligadas a esses extremos.",
+            "Eco da Fênix: quando alguém cai, você é capaz de devolver um pouco de vida a aliados à beira da morte, como se recolhesse brasas do fim.",
+            "Olhar para o Além: lida melhor com funerais, espíritos e transições finais, sendo sempre lembrado em ritos importantes."
           ]
         },
         {
-          "id": "kishin_psicopompo",
-          "nome": "Guia dos Mortos",
-          "descricao": "Você serve como ponte entre vivos e mortos.",
+          "id": "kishin_gargula",
+          "nome": "Gárgula (família)",
+          "descricao": "A família Gárgula existe para proteger: muros, templos, pessoas e segredos de interesse d’A Ordem.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Sensibilidade a Espíritos: sente presenças sobrenaturais próximas.",
-            "Ritos Funerários: sabe conduzir cerimoniais que acalmam mortos ou lembranças inquietas.",
-            "Língua dos Que Partiram: consegue se comunicar limitadamente com ecos de pessoas falecidas (via narração)."
+            "Sentinela Imóvel: você foi treinado para segurar posições e proteger aliados em situações de alta pressão.",
+            "Escudo da Ordem: consegue manter inimigos focados em você, servindo como barreira viva entre o perigo e quem está atrás.",
+            "Magiprotetor: sua relação com armaduras e proteção não atrapalha a forma como canaliza magia e preceitos da Ordem."
+          ]
+        },
+        {
+          "id": "kishin_hipocampo",
+          "nome": "Hipocampo (família)",
+          "descricao": "Ligados a mistérios ocultos e segredos arcanos, os Hipocampo estudam aquilo que não deveria ser tocado.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Erudito Arcano: você tem facilidade incomum com teoria mágica, rituais e símbolos esotéricos.",
+            "Marca Arcana Pessoal: desenvolveu um estilo mágico próprio, com truques e efeitos que carregam a assinatura da sua família.",
+            "Olhos para o Invisível: percebe melhor padrões mágicos, inscrições e interferências sobrenaturais sutis."
+          ]
+        },
+        {
+          "id": "kishin_grifo",
+          "nome": "Grifo (família)",
+          "descricao": "Grifos são a face de comando e liderança entre os kishin, usados como voz e rosto da Ordem.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Presença de Comando: você é naturalmente inclinado a liderar, negociar e reorganizar situações sociais ou estratégicas.",
+            "Liderar pelo Exemplo: suas ações em combate e conflito inspiram aliados a irem além do próprio limite.",
+            "Palavras de Ordem: sua voz carrega peso — discursos, ordens e ameaças soam mais difíceis de ignorar."
+          ]
+        },
+        {
+          "id": "kishin_corvo",
+          "nome": "Corvo (família)",
+          "descricao": "Designados para guardar e manipular segredos, os Corvo são a sombra informada d’A Ordem.",
+          "tamanho": "Médio",
+          "caracteristicas": [
+            "Guardião de Segredos: você é treinado para esconder informações, memórias e intenções até o momento certo de revelá-las.",
+            "Truques Ocultos: ao longo da vida, desbloqueia talentos extras — seja magia, perícias ou proficiências especiais — sempre revelados no momento dramático adequado.",
+            "Olhar Desconfiado: tem facilidade para perceber brechas, mentiras e oportunidades em situações complexas."
           ]
         }
       ]
@@ -198,6 +356,7 @@
       "descricao": "Criaturas noturnas com sangue alterado, ligadas à vitae e a Warpinier.",
       "deusa": "Deusa Desconhecida",
       "melancolia": "Persona non grata",
+      "desc.melancolia": "Você precisa ser convidado para entrar em qualquer propriedade que não lhe pertença, a menos que tenha deixado algum objeto pessoal seu lá dentro, sob o cuidado de outra pessoa do local.",
       "deslocamento": 7.5,
       "herancas": [
         {
@@ -227,31 +386,43 @@
     {
       "id": "tatsunoko",
       "nome": "Tatsunoko",
-      "descricao": "Humanoides com herança dracônica oriental, ligados a rios, nuvens e ciclos.",
-      "deusa": "Deusa Desconhecida",
-      "melancolia": "O Dever Nunca Reconhecido",
+      "descricao": "Pequenos dragões reptilianos, criados para vigiar e conter o poder dracônico. Esquecidos pelo mundo, mas essenciais nos bastidores de Opath.",
+      "deusa": "A Testemunha",
+      "melancolia": "Testemunha do Esquecimento",
+      "desc.melancolia": "Não importa o tamanho de suas ações e feitos: seu nome está fadado ao esquecimento. Você existe para testemunhar a mudança, não para ser lembrado por ela. A Testemunha o torna invisível aos olhos da história — mas isso também o torna perfeito para agir nas sombras.",
       "deslocamento": 7.5,
       "herancas": [
         {
-          "id": "tatsu_rio",
-          "nome": "Filho do Rio",
-          "descricao": "Ligação com águas correntes e transformações suaves.",
-          "tamanho": "Médio",
+          "id": "tatsu_cromatica",
+          "nome": "Herança Cromática",
+          "descricao": "Suas escamas carregam tons vivos escondidos sob uma película discreta. O poder elemental corre nas suas veias, lembrando o legado dos guerreiros dracônicos.",
+          "tamanho": "Pequeno",
           "caracteristicas": [
-            "Respiração Fluida: facilidade para nadar, prender a respiração e se mover na água.",
-            "Fluxo Adaptável: bônus em testes para se ajustar a mudanças súbitas de plano ou terreno.",
-            "Voz da Água: percebe emoções em ambientes aquáticos (rios, chuvas fortes, cachoeiras)."
+            "Servo Elemental: você carrega afinidade com um tipo de dano elemental (como ácido, elétrico, gélido ou ígneo).",
+            "Mini Guerreiro Dracônico: mesmo pequeno, foi treinado para lutar como os antigos servos do clã da espada dracônica.",
+            "Postura Ofensiva: é natural para você avançar, flanquear e pressionar inimigos em combate corpo a corpo."
           ]
         },
         {
-          "id": "tatsu_nuvem",
-          "nome": "Filho das Nuvens",
-          "descricao": "Ligação com ventos, neblina e linhas de energia no céu.",
-          "tamanho": "Médio",
+          "id": "tatsu_metalica",
+          "nome": "Herança Metálica",
+          "descricao": "Suas escamas lembram metal trabalhado. Você carrega em si o instinto dos protetores dracônicos, feitos para manter os outros vivos.",
+          "tamanho": "Pequeno",
           "caracteristicas": [
-            "Passos Leves: mais difícil deixar rastros claros no chão.",
-            "Brisa Mensageira: às vezes recebe sinais sutis trazidos pelo vento (cheiros, sons, partículas).",
-            "Olhar na Altura: facilidade para avaliar rotas em três dimensões (subir, planar, descer)."
+            "Escudo e Escamas: sua relação com proteção é quase instintiva; escudos, bloqueios e redução de dano fazem parte do seu estilo.",
+            "Mini Guardião Dracônico: você foi moldado para enfrentar ameaças maiores do que você, segurando a linha mesmo em desvantagem de tamanho.",
+            "Defesa Ativa: reagir a ataques, aparar golpes e interpor-se entre aliados e perigo é algo que você faz com naturalidade."
+          ]
+        },
+        {
+          "id": "tatsu_mineral",
+          "nome": "Herança Mineral",
+          "descricao": "Suas escamas lembram pedras preciosas esfumaçadas. Você descende dos árbitros dracônicos, responsáveis por julgar, mediar e decidir.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Olhar de Arbitro: você tem facilidade em perceber mentiras, contradições e intenções ocultas.",
+            "Agir Antes da Reação: costuma agir rápido no início de conflitos, tentando definir o rumo da situação logo no começo.",
+            "Peso do Julgamento: quando decide algo, sua palavra e postura carregam uma autoridade difícil de ignorar."
           ]
         }
       ]
@@ -259,31 +430,32 @@
     {
       "id": "tora",
       "nome": "Tôra",
-      "descricao": "Felinos humanoides fortes e ágeis, focados em instinto e liberdade.",
-      "deusa": "Deusa Desconhecida",
-      "melancolia": "do pó ao pó",
+      "descricao": "Primeiras criações d’A Terra, tôras são corpulentos, resistentes e acostumados a ver cidades, lares e laços ruírem até virar pó.",
+      "deusa": "A Terra",
+      "melancolia": "Do Pó ao Pó",
+      "desc.melancolia": "Tudo que você constrói, cultiva ou se orgulha está destinado a se tornar pó. Você sabe que qualquer lar, grupo ou relação pode desmoronar a qualquer momento — e ainda assim segue em frente, carregando uma resistência física e moral quase inquebrável.",
       "deslocamento": 7.5,
       "herancas": [
         {
-          "id": "tora_cacador",
-          "nome": "Caçador Solitário",
-          "descricao": "Predador que age por conta própria, rápido e silencioso.",
+          "id": "tora_noatorenho",
+          "nome": "Noatorenho",
+          "descricao": "Ligado aos antigos túneis e ao Arcanum de seus ancestrais, você carrega a teimosia e a força de quem aprendeu a atravessar desastres em pedra e escuridão.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Garras Felinas: ataque desarmado melhorado para cortar ou rasgar.",
-            "Equilíbrio Felino: bônus em testes de equilíbrio, acrobacia e deslocamento em superfícies estreitas.",
-            "Olhar de Caçador: facilidade para escolher o alvo mais vulnerável numa cena."
+            "Caminho das Pedras: você se sente à vontade entre rocha, túneis e estruturas pesadas; armaduras e peso físico fazem parte natural do seu corpo.",
+            "Cabeça Dura: desistir não é opção. Quando falha em algo importante, é comum insistir até conseguir, mesmo que isso o coloque em risco.",
+            "Teimosia Ancestral: sua recusa em aceitar derrota rende momentos dramáticos em que você força uma segunda tentativa, dobrando a aposta contra o destino."
           ]
         },
         {
-          "id": "tora_orgulhoso",
-          "nome": "Orgulho de Alcateia",
-          "descricao": "Mesmo livre, você reconhece a importância da ‘matilha’.",
+          "id": "tora_tormundiano",
+          "nome": "Törmundiano",
+          "descricao": "Marcado pelas ruínas da superfície e pelos destroços de Törmund, você aprendeu a sobreviver em meio à queda de tudo ao seu redor.",
           "tamanho": "Médio",
           "caracteristicas": [
-            "Rugido Inspirador: pode incentivar aliados próximos, dando pequeno bônus em testes de coragem.",
-            "Postura Dominante: vantagem ocasional em testes de Intimidação.",
-            "Sentido de Território: percebe invasões ou mudanças estranhas no ambiente que considera “seu”."
+            "Toque da Ruína: você é especialmente eficiente contra estruturas, construções e criaturas artificiais, como se sua presença acelerasse a decomposição.",
+            "Lamber as Feridas: descansar e se recompor é algo que você faz bem; mesmo machucado, consegue recuperar forças melhor do que a maioria.",
+            "Cicatrizes que Andam: carregar perdas e desastres o tornou duro — dor, exaustão e fracassos passados só o deixam mais obstinado nas próximas tentativas."
           ]
         }
       ]
@@ -291,31 +463,54 @@
     {
       "id": "urodelo",
       "nome": "Urodelo",
-      "descricao": "Salamandras humanoides ligadas a venenos, regeneração e segredos.",
-      "deusa": "Deusa Desconhecida",
-      "melancolia": "Guarda eterna",
-      "deslocamento": 7.5,
+      "descricao": "Pequenas salamandras humanoides vindas dos Salões Elementais, criadas por Ruedim, o Protetor, para guardar portais e segredos — e agora presas em Opath com um juramento que nunca acaba.",
+      "deusa": "Ruedim, o Protetor",
+      "melancolia": "Guarda Eterna",
+      "desc.melancolia": "Você dedica sua breve vida a proteger algo ou alguém. Enquanto se afasta desse objetivo, seu corpo começa a secar, rachando como terra sem água. Suas escolhas giram em torno de juramentos: o que você prometeu guardar e o quanto está disposto a sacrificar por isso.",
+      "deslocamento": 9,
       "herancas": [
         {
-          "id": "urodelo_regenerador",
-          "nome": "Carne que Rebrota",
-          "descricao": "Seu corpo se regenera mais rápido do que o normal.",
-          "tamanho": "Médio",
+          "id": "urodelo_acido",
+          "nome": "Herança Ácida",
+          "descricao": "Seu coração lateja como um reagente corrosivo, lembrando tubulações, laboratórios e armas que devoram metal.",
+          "tamanho": "Pequeno",
           "caracteristicas": [
-            "Regeneração Lenta: recuperação de pequenas lesões fora de combate é mais rápida.",
-            "Resistência a Toxinas: bônus em testes contra venenos e doenças.",
-            "Corpo Flexível: consegue passar por espaços um pouco menores do que o esperado para seu tamanho."
+            "Coração Ácido: você tem afinidade especial com substâncias corrosivas e resistência a efeitos ácidos.",
+            "Toque Corrosivo: quando fere alguém, seus ataques parecem abrir caminho por armaduras e superfícies duras.",
+            "Olhar de Alquimista: lida bem com frascos, misturas e ambientes cheios de substâncias perigosas."
           ]
         },
         {
-          "id": "urodelo_venenoso",
-          "nome": "Secreções Venenosas",
-          "descricao": "Sua pele e fluidos carregam toxinas naturais.",
-          "tamanho": "Médio",
+          "id": "urodelo_eletrico",
+          "nome": "Herança Elétrica",
+          "descricao": "Seu coração dispara como uma faísca constante. Seu corpo reage rápido, como se sempre estivesse à beira de um curto-circuito.",
+          "tamanho": "Pequeno",
           "caracteristicas": [
-            "Contato Incômodo: quem te agarra ou te segura sem proteção pode sofrer efeitos menores de veneno (a combinar).",
-            "Especialista em Venenos: bônus em testes para lidar com substâncias venenosas (criar, identificar, aplicar).",
-            "Cheiro Químico: percebe odores químicos/venenosos que outros ignorariam."
+            "Coração Elétrico: você é especialmente resistente a descargas e efeitos elétricos.",
+            "Golpe Estilhaçante: seus ataques podem vir acompanhados de um impacto súbito, como um choque concentrado.",
+            "Reflexos em Curto: você tende a reagir com rapidez a ameaças, ruídos e movimentos bruscos."
+          ]
+        },
+        {
+          "id": "urodelo_gelido",
+          "nome": "Herança Gélida",
+          "descricao": "Seu coração é frio como as geleiras distantes; seu toque carrega a lentidão e o peso de um inverno que não passa.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Coração Gélido: você é resistente a frio intenso e condições gélidas.",
+            "Toque Congelante: ferimentos causados por você parecem roubar o movimento e o calor do alvo.",
+            "Calma Inabalável: sua postura emocional é fria e controlada, difícil de abalar em situações de tensão."
+          ]
+        },
+        {
+          "id": "urodelo_igneo",
+          "nome": "Herança Ígnea",
+          "descricao": "Seu coração queima como um braseiro eterno. A chama que o move é tanto arma quanto lembrança dos Salões Elementais.",
+          "tamanho": "Pequeno",
+          "caracteristicas": [
+            "Coração Ígneo: você resiste bem ao calor e a chamas, naturais ou mágicas.",
+            "Fagulha Persistente: ataques seus parecem deixar um resquício de fogo, uma ameaça de queimar mais do que deveria.",
+            "Afinidade com Explosões: armas de fogo, pólvora e engenhocas explosivas fazem sentido demais para você."
           ]
         }
       ]
@@ -326,6 +521,7 @@
       "descricao": "Pequenos humanoides vindos do planeta verde Walsh, atravessando uma Porta aberta em Alberich durante a Guerra do Firmamento. Sortudos, inquietos e acostumados a um mundo grande demais para seu tamanho, fazem casa onde quer que consigam manter uma porta aberta.",
       "deusa": "A Sorte",
       "melancolia": "Prisioneiro de Si",
+      "desc.melancolia": "Você não consegue abrir portas pelo lado de dentro. Às vezes isso é literal — um quarto trancado —, às vezes é uma ideia, um relacionamento ou situação da qual você simplesmente não consegue sair. Sempre que essa limitação transforma uma cena em algo perigoso ou emocionalmente tenso, a melancolia mostra seu peso.",
       "deslocamento": 7.5,
       "herancas": [
         {
@@ -400,22 +596,140 @@
       "id": "combatente",
       "nome": "Combatente",
       "descricao": "Usa atributos físicos e técnicas de combate para resolver conflitos.",
-      "atributos_primarios": ["FOR", "DEX"],
-      "pericias_iniciais": 2
+      "atributos_primarios": ["FOR", "DES"],
+      "pericias_iniciais": 2,
+
+      "papel": "Linha de frente marcial, especialista em armas, armaduras e façanhas de combate.",
+      
+      "resumo": [
+        "PV altos (1d10 por nível) e muitos pontos de Ênfase para manobras.",
+        "Acesso amplo a armas simples, marciais, armaduras pesadas e escudos.",
+        "Ataque Poderoso aumenta o dano dos seus ataques com armas.",
+        "Façanhas de Combate gastam Ênfase para controlar o campo de batalha."
+      ],
+
+      "vida": {
+        "dado_vida": "1d10",
+        "pv_nivel_1": "10 + CON",
+        "pv_por_nivel": "1d10 (ou 6) + CON por nível acima do 1º"
+      },
+
+      "enfase": {
+        "pontos_por_nivel": 3
+      },
+
+      "proficiencias": {
+        "armaduras": "Armaduras leves, armaduras pesadas e escudos",
+        "armas": "Armas simples e armas marciais",
+        "protecões": "CON e uma dentre FOR ou DES",
+        "pericias_fixas": ["Preparo Físico"],
+        "pericias_escolha": ["Cultura", "Intimidação", "Intuição", "Percepção", "Natureza"],
+        "extras": "Você pode trocar uma perícia por proficiência com armas de fogo ou por uma arma regional."
+      },
+
+      "exemplos_personagem": [
+        "Duelista que vive de torneios e desafios.",
+        "Arqueiro de elite a serviço de uma guilda.",
+        "Soldado veterano dos ermos, acostumado a sobreviver em qualquer batalha."
+      ]
     },
     {
       "id": "especialista",
       "nome": "Especialista",
-      "descricao": "Usa conhecimentos, perícias e artimanhas para superar desafios.",
+      "descricao": "Usa conhecimentos, perícias e artimanhas para superar desafios dentro e fora do combate.",
       "atributos_primarios": ["INT", "SAB"],
-      "pericias_iniciais": 3
+      "pericias_iniciais": 5,
+
+      "papel": "Mestre de perícias, truques e soluções criativas; vira a cena a favor do grupo com Artimanhas, Especialidade e talentos de trilha.",
+
+      "resumo": [
+        "Ataque Especializado: adiciona de 1d6 até 1d12 de dano extra quando ataca com vantagem (uma vez por turno).",
+        "Ganha uma Especialidade (palavras inspiradoras, sexto sentido, resistência, etc.) que define seu estilo de suporte ou sobrevivência.",
+        "Começa expert em 2 perícias e ganha mais expertise e Artimanhas conforme sobe de nível, dominando Exploração, Interação Social e Desafios.",
+        "Ação Ardilosa permite usar a ação bônus para correr, desengajar ou prestar primeiros socorros, mantendo o grupo em movimento.",
+        "Cambalhota! e Evasão Especializada ajudam a evitar ou reduzir dano de ataques e efeitos em área, aumentando muito a sobrevivência.",
+        "Recebe mais talentos de trilha que outras classes, mergulhando fundo em um conceito (ladino urbano, magitec, erudito, bardo, etc.)."
+      ],
+
+      "vida": {
+        "dado_vida": "1d8",
+        "pv_nivel_1": "8 + CON",
+        "pv_por_nivel": "1d8 (ou 5) + CON por nível acima do 1º"
+      },
+
+      "enfase": {
+        "pontos_por_nivel": 3
+      },
+
+      "proficiencias": {
+        "armaduras": "Armaduras leves",
+        "armas": "Armas simples",
+        "protecões": "Quaisquer duas Proteções à sua escolha",
+        "pericias_fixas": [],
+        "pericias_escolha": [
+          "Escolha cinco perícias quaisquer; você pode trocar uma delas por proficiência com armas de fogo ou por uma arma regional."
+        ],
+        "extras": "Aptidões e idiomas: escolha entre (a) duas Aptidões e um idioma ou (b) três idiomas."
+      },
+
+      "exemplos_personagem": [
+        "Artesão magitec que vive de consertar, sabotar e turbinar armas e dispositivos.",
+        "Exploradora de ruínas que decifra armadilhas, mapas antigos e mecanismos esquecidos.",
+        "Negociador sagaz que manipula contratos, documentos e pessoas em igual medida.",
+        "Acadêmico itinerante que resolve problemas com livros, experiência e uma mochila cheia de ferramentas estranhas."
+      ]
     },
     {
       "id": "ocultista",
       "nome": "Ocultista",
-      "descricao": "Usuário de magia que manipula forças arcanas para sobreviver e influenciar o mundo.",
+      "descricao": "Usuário de magia que manipula o Arcanum para atacar, controlar e apoiar o grupo.",
       "atributos_primarios": ["INT", "CAR"],
-      "pericias_iniciais": 2
+      "pericias_iniciais": 2,
+
+      "papel": "Conjurador principal do grupo, focado em magias ofensivas, controle de campo e suporte mágico.",
+
+      "resumo": [
+        "PV baixos (1d6 por nível), mas grande versatilidade mágica e impacto à distância.",
+        "Escolhe uma Tradição Ocultista (Foco, Inata ou Invocação) que muda o jeito de conjurar e quantas magias conhece.",
+        "Começa com magias de Camada Superficial e depois ganha acesso às Camadas Rasa e Profunda.",
+        "Vislumbre Arcano (Convergência Estelar) converte magias conjuradas em pontos de Ênfase temporários.",
+        "Muito dependente de posicionamento, gerenciamento de Ênfase e sinergia com trilha/legado."
+      ],
+
+      "vida": {
+        "dado_vida": "1d6",
+        "pv_nivel_1": "6 + CON",
+        "pv_por_nivel": "1d6 (ou 4) + CON por nível acima do 1º"
+      },
+
+      "enfase": {
+        "pontos_por_nivel": 3
+      },
+
+      "proficiencias": {
+        "armaduras": "Nenhuma",
+        "armas": "Armas simples",
+        "protecões": "Atributo-chave de conjuração (INT, SAB ou CAR, escolhido no 1º nível) e mais uma Proteção à sua escolha",
+        "pericias_fixas": [],
+        "pericias_escolha": [
+          "Arcanismo",
+          "Doutrinas",
+          "Natureza",
+          "Aptidão",
+          "Cultura",
+          "Intuição",
+          "Magitec",
+          "Medicina",
+          "Percepção"
+        ],
+        "extras": "Escolha 1 perícia entre Arcanismo, Doutrinas ou Natureza e depois 3 dentre a lista acima. Você pode trocar uma perícia por proficiência com armas de fogo ou por uma arma regional."
+      },
+
+      "exemplos_personagem": [
+        "Bruxo de foco arcano que dispara rajadas elementais por um cajado ou arma.",
+        "Sacerdote que canaliza bênçãos, maldições e magias de cura em nome de uma deusa.",
+        "Feiticeiro inato que dobra a realidade com pura força de vontade e sangue mágico."
+      ]
     }
   ],
   "atributos": [

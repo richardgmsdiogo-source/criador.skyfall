@@ -53,7 +53,7 @@ const TODAS_PROFICIENCIAS: string[] = [
   "Preparo Físico",
 ];
 
-const LIMITE_PROF = 6; // quantas proficiências o jogador pode marcar aqui
+//const LIMITE_PROF = 6; // quantas proficiências o jogador pode marcar aqui
 
 export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
   const { personagem, atualizarPersonagem } = useCharacter();
@@ -138,14 +138,11 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
       ((personagem as any).proficienciasSelecionadas as string[]) || [];
     const jaTem = atuais.includes(nome);
 
-    if (jaTem) {
-      const novaLista = atuais.filter((p) => p !== nome);
-      atualizarPersonagem({ proficienciasSelecionadas: novaLista });
-    } else {
-      if (atuais.length >= LIMITE_PROF) return;
-      const novaLista = [...atuais, nome];
-      atualizarPersonagem({ proficienciasSelecionadas: novaLista });
-    }
+    const novaLista = jaTem
+      ? atuais.filter((p) => p !== nome)  // se já tem, remove
+      : [...atuais, nome];               // se não tem, adiciona
+
+    atualizarPersonagem({ proficienciasSelecionadas: novaLista });
   };
 
   return (
@@ -279,7 +276,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
                   Proficiências
                 </p>
                 <span className="text-[11px] text-[#c9a961]">
-                  {profsSelecionadas.length} / {LIMITE_PROF} selecionadas
+                  {profsSelecionadas.length} selecionadas
                 </span>
               </div>
               <p className="text-xs text-gray-400">
