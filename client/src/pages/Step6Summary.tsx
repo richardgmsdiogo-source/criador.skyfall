@@ -8,8 +8,7 @@ import { useSkyfalData } from "@/hooks/useSkyfalData";
 import { Button } from "@/components/ui/button";
 import { Download, RotateCcw } from "lucide-react";
 
-// IMPORTANDO AS IMAGENS DO VITE (usa client/src/assets)
-// só as que você REALMENTE tem na pasta
+// IMPORTANDO AS IMAGENS DOS LEGADOS (igual Welcome, mas 1 por legado)
 import anuroImg from "@/assets/Anuro.png";
 import dracoImg from "@/assets/Draco.png";
 import elfeImg from "@/assets/Elfe.png";
@@ -18,8 +17,7 @@ import humaniImg from "@/assets/Humani.png";
 import kishinImg from "@/assets/Kishin.png";
 import sanguirImg from "@/assets/Sanguir.png";
 import tatsunokoImg from "@/assets/Tatsunoko.png";
-// ⚠️ Tora removido por enquanto
-import toraImg from "@/assets/Tora.png";
+import toraImg from "@/assets/Tora.png"; // Tôra -> Tora.png
 import urodeloImg from "@/assets/Urodelo.png";
 import walshieImg from "@/assets/Walshie.png";
 
@@ -28,7 +26,7 @@ interface Step6SummaryProps {
   onReset: () => void;
 }
 
-// Mapa de legado → imagem padrão (usando os imports acima)
+// Mapa de legado → imagem padrão (já com os imports do Vite)
 const LEGADO_IMAGENS: Record<string, string> = {
   anuro: anuroImg,
   draco: dracoImg,
@@ -38,11 +36,10 @@ const LEGADO_IMAGENS: Record<string, string> = {
   kishin: kishinImg,
   sanguir: sanguirImg,
   tatsunoko: tatsunokoImg,
-  tora: toraImg, 
+  tora: toraImg,
   urodelo: urodeloImg,
   walshie: walshieImg,
 };
-
 
 // Normaliza chave de legado (remove acento e deixa minúsculo)
 function normalizarLegadoKey(valor: string): string {
@@ -74,11 +71,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
   const { data } = useSkyfalData();
 
   if (!data) {
-    return (
-      <div className="text-center text-gray-400">
-        Carregando dados...
-      </div>
-    );
+    return <div className="text-center text-gray-400">Carregando dados...</div>;
   }
 
   const legado = data.legados.find((l) => l.id === personagem.legado);
@@ -99,11 +92,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
     const resValor = personagem.atributos?.RES ?? 10;
     const resMod = Math.floor((resValor - 10) / 2);
     const baseHP =
-      classe.id === "combatente"
-        ? 12
-        : classe.id === "especialista"
-        ? 8
-        : 6;
+      classe.id === "combatente" ? 12 : classe.id === "especialista" ? 8 : 6;
     return baseHP + resMod;
   };
 
@@ -137,7 +126,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
       ? normalizarLegadoKey(String(legadoKeyRaw))
       : "";
 
-  // Imagem padrão do legado (se existir)
+  // Imagem padrão do legado (se existir no mapa)
   const retratoPadraoLegado = legadoKey ? LEGADO_IMAGENS[legadoKey] : undefined;
 
   // Fallback final: foto enviada > imagem padrão do legado > nada
