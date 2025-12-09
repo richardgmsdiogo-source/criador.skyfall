@@ -1,5 +1,3 @@
-// vite.config.ts ou vite.config.js
-
 import { jsxLocPlugin } from "@builder.io/vite-plugin-jsx-loc";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
@@ -8,22 +6,25 @@ import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
+// Em ESM não tem __dirname nativo
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Como é um repositório de Pages com /skyfall, já fixa logo:
-const basePath = "/skyfall/";
+// Quando roda no GitHub Actions (Pages), usa base /skyfall/
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
-const plugins = [
-  react(),
-  tailwindcss(),
-  jsxLocPlugin(),
-  vitePluginManusRuntime(),
-];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+
+// Decide para onde o build vai:
+// - Local / Manus: dist/public
+// - GitHub Pages: docs (que é o que o Pages está tentando usar)
+const outDir = isGitHubPages
+  ? path.resolve(__dirname, "docs")
+  : path.resolve(__dirname, "dist/public");
 
 export default defineConfig({
   plugins,
-  base: basePath,
+  base: isGitHubPages ? "/skyfall/" : "/", // local funciona normal, Pages usa /skyfall/
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -32,10 +33,10 @@ export default defineConfig({
     },
   },
   envDir: __dirname,
+  // projeto React está dentro de /client
   root: path.resolve(__dirname, "client"),
   build: {
-    // 👉 GitHub Pages vai ler essa pasta
-    outDir: path.resolve(__dirname, "docs"),
+    outDir,
     emptyOutDir: true,
   },
   server: {
