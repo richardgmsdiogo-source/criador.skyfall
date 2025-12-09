@@ -3,6 +3,11 @@
 
 import { Button } from "@/components/ui/button";
 
+// IMPORTANDO AS IMAGENS DO VITE (usa client/src/assets)
+import heroSkyfall from "@/assets/hero-skyfall.png";
+import legacyShowcase from "@/assets/legacy-showcase.png";
+import classesTrio from "@/assets/classes-trio.png";
+
 interface WelcomeProps {
   onStart: () => void;
 }
@@ -15,7 +20,7 @@ export default function Welcome({ onStart }: WelcomeProps) {
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
           <img
-            src="/images/hero-skyfall.png"
+            src={heroSkyfall}
             alt="Skyfall Hero"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -61,7 +66,7 @@ export default function Welcome({ onStart }: WelcomeProps) {
 
             <div className="relative">
               <img
-                src="/images/legacy-showcase.png"
+                src={legacyShowcase}
                 alt="Legados"
                 className="w-full rounded border border-[#c9a961]/30"
               />
@@ -108,7 +113,7 @@ export default function Welcome({ onStart }: WelcomeProps) {
 
             <div className="relative">
               <img
-                src="/images/classes-trio.png"
+                src={classesTrio}
                 alt="Classes"
                 className="w-full rounded border border-[#c9a961]/30"
               />
@@ -235,9 +240,14 @@ export default function Welcome({ onStart }: WelcomeProps) {
       <footer className="border-t border-[#c9a961]/30 bg-[#04040a]">
         <div className="max-w-6xl mx-auto px-4 py-6 text-[11px] md:text-xs text-gray-400 flex flex-col md:flex-row gap-3 md:gap-4 md:justify-between">
           <p className="md:max-w-md leading-relaxed">
-            Skyfall RPG é um jogo de fantasia trágica criado pela CapyCat Games. 
-            Este criador de personagens é um projeto não-oficial para auxiliar na criação de personagens nível 1 seguindo as regras do livro base.
-            Para mais informações sobre Skyfall RPG, visite:<span className="text-[#c9a961]">https://www.capycat.games/</span>{" "}
+            Skyfall RPG é um jogo de fantasia trágica criado pela CapyCat Games.
+            Este criador de personagens é um projeto não-oficial para auxiliar na
+            criação de personagens nível 1 seguindo as regras do livro base. Para
+            mais informações sobre Skyfall RPG, visite:
+            <span className="text-[#c9a961]">
+              {" "}
+              https://www.capycat.games/
+            </span>
           </p>
 
           <p className="md:text-right leading-relaxed">

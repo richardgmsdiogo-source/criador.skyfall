@@ -9,6 +9,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { CharacterProvider } from "./contexts/CharacterContext";
 import Welcome from "./pages/Welcome";
 import CharacterCreator from "./pages/CharacterCreator";
+import heroSkyfall from "@assets/hero-skyfall.png";
 
 function App() {
   const [showCreator, setShowCreator] = useState(false);

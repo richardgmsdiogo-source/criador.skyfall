@@ -1,8 +1,7 @@
-// Design Philosophy: Neogótico Contemplativo
-// Hook para carregar e gerenciar os dados do Skyfall RPG
+// src/hooks/useSkyfalData.ts
 
-import { useEffect, useState } from 'react';
-import { SkyfalDataSet } from '@/types/character';
+import { useEffect, useState } from "react";
+import { SkyfalDataSet } from "@/types/character";
 
 export function useSkyfalData() {
   const [data, setData] = useState<SkyfalDataSet | null>(null);
@@ -12,14 +11,18 @@ export function useSkyfalData() {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await fetch('/skyfall_data.json');
+        // Vite injeta o BASE_URL de acordo com o "base" do vite.config
+        const baseUrl = import.meta.env.BASE_URL || "/";
+
+        const response = await fetch(`${baseUrl}skyfall_data.json`);
         if (!response.ok) {
-          throw new Error('Falha ao carregar dados do Skyfall');
+          throw new Error("Falha ao carregar dados do Skyfall");
         }
+
         const jsonData = await response.json();
         setData(jsonData);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Erro desconhecido');
+        setError(err instanceof Error ? err.message : "Erro desconhecido");
       } finally {
         setLoading(false);
       }
