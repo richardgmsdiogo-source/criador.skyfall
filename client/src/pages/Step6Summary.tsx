@@ -13,19 +13,22 @@ interface Step6SummaryProps {
   onReset: () => void;
 }
 
-// Imagens padrão por Legado (arquivos em /public/images)
+// BASE respeita o base do Vite (/, /criador.skyfall/, etc)
+const BASE = import.meta.env.BASE_URL ?? "/";
+
+// Imagens padrão por Legado (arquivos em client/public/images)
 const LEGADO_IMAGENS: Record<string, string> = {
-  anuro: "/images/Anuro.png",
-  draco: "/images/Draco.png",
-  elfe: "/images/Elfe.png",
-  gnomo: "/images/Gnomo.png",
-  humani: "/images/Humani.png",
-  kishin: "/images/Kishin.png",
-  sanguir: "/images/Sanguir.png",
-  tatsunoko: "/images/Tatsunoko.png",
-  tora: "/images/Tora.png", // Tôra -> tora
-  urodelo: "/images/Urodelo.png",
-  walshie: "/images/Walshie.png",
+  anuro: `${BASE}images/Anuro.png`,
+  draco: `${BASE}images/Draco.png`,
+  elfe: `${BASE}images/Elfe.png`,
+  gnomo: `${BASE}images/Gnomo.png`,
+  humani: `${BASE}images/Humani.png`,
+  kishin: `${BASE}images/Kishin.png`,
+  sanguir: `${BASE}images/Sanguir.png`,
+  tatsunoko: `${BASE}images/Tatsunoko.png`,
+  tora: `${BASE}images/Tora.png`, // Tôra -> tora
+  urodelo: `${BASE}images/Urodelo.png`,
+  walshie: `${BASE}images/Walshie.png`,
 };
 
 // Normaliza chave de legado (remove acento e deixa minúsculo)
@@ -52,8 +55,6 @@ const TODAS_PROFICIENCIAS: string[] = [
   "Percepção",
   "Preparo Físico",
 ];
-
-//const LIMITE_PROF = 6; // quantas proficiências o jogador pode marcar aqui
 
 export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
   const { personagem, atualizarPersonagem } = useCharacter();
@@ -139,8 +140,8 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
     const jaTem = atuais.includes(nome);
 
     const novaLista = jaTem
-      ? atuais.filter((p) => p !== nome)  // se já tem, remove
-      : [...atuais, nome];               // se não tem, adiciona
+      ? atuais.filter((p) => p !== nome) // se já tem, remove
+      : [...atuais, nome]; // se não tem, adiciona
 
     atualizarPersonagem({ proficienciasSelecionadas: novaLista });
   };
@@ -191,7 +192,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
             </div>
           </div>
 
-          {/* Direita: Nome / Jogador / Legado + Maldição / Herança / Classe / Antecedente */}
+          {/* Direita: Nome / Jogador / Legado + Melancolia / Herança / Classe / Antecedente */}
           <div className="md:col-span-8 flex flex-col gap-4">
             {/* Identidade básica */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
@@ -213,7 +214,7 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
                 </p>
               </div>
 
-              {/* Legado no lugar do Conceito, sem melancolia aqui */}
+              {/* Legado */}
               <div className="md:col-span-3 border border-[#c9a961]/40 rounded-lg px-3 py-2 bg-black/40">
                 <p className="text-[10px] tracking-widest text-gray-400 uppercase">
                   Legado
@@ -224,9 +225,8 @@ export default function Step6Summary({ onPrev, onReset }: Step6SummaryProps) {
               </div>
             </div>
 
-            {/* Linha logo abaixo: Maldição / Herança / Classe / Antecedente */}
+            {/* Linha logo abaixo: Melancolia / Herança / Classe / Antecedente */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-              {/* Maldição no lugar onde antes era Legado */}
               <div className="md:col-span-3 border border-[#c9a961]/40 rounded-lg px-3 py-2 bg-black/40">
                 <p className="text-[10px] tracking-widest text-gray-400 uppercase">
                   Melancolia
