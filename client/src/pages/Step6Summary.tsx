@@ -8,28 +8,41 @@ import { useSkyfalData } from "@/hooks/useSkyfalData";
 import { Button } from "@/components/ui/button";
 import { Download, RotateCcw } from "lucide-react";
 
+// IMPORTANDO AS IMAGENS DO VITE (usa client/src/assets)
+// só as que você REALMENTE tem na pasta
+import anuroImg from "@/assets/Anuro.png";
+import dracoImg from "@/assets/Draco.png";
+import elfeImg from "@/assets/Elfe.png";
+import gnomoImg from "@/assets/Gnomo.png";
+import humaniImg from "@/assets/Humani.png";
+import kishinImg from "@/assets/Kishin.png";
+import sanguirImg from "@/assets/Sanguir.png";
+import tatsunokoImg from "@/assets/Tatsunoko.png";
+// ⚠️ Tora removido por enquanto
+import toraImg from "@/assets/Tora.png";
+import urodeloImg from "@/assets/Urodelo.png";
+import walshieImg from "@/assets/Walshie.png";
+
 interface Step6SummaryProps {
   onPrev: () => void;
   onReset: () => void;
 }
 
-// BASE respeita o base do Vite (/, /criador.skyfall/, etc)
-const BASE = import.meta.env.BASE_URL ?? "/";
-
-// Imagens padrão por Legado (arquivos em client/public/images)
+// Mapa de legado → imagem padrão (usando os imports acima)
 const LEGADO_IMAGENS: Record<string, string> = {
-  anuro: `${BASE}images/Anuro.png`,
-  draco: `${BASE}images/Draco.png`,
-  elfe: `${BASE}images/Elfe.png`,
-  gnomo: `${BASE}images/Gnomo.png`,
-  humani: `${BASE}images/Humani.png`,
-  kishin: `${BASE}images/Kishin.png`,
-  sanguir: `${BASE}images/Sanguir.png`,
-  tatsunoko: `${BASE}images/Tatsunoko.png`,
-  tora: `${BASE}images/Tora.png`, // Tôra -> tora
-  urodelo: `${BASE}images/Urodelo.png`,
-  walshie: `${BASE}images/Walshie.png`,
+  anuro: anuroImg,
+  draco: dracoImg,
+  elfe: elfeImg,
+  gnomo: gnomoImg,
+  humani: humaniImg,
+  kishin: kishinImg,
+  sanguir: sanguirImg,
+  tatsunoko: tatsunokoImg,
+  tora: toraImg, 
+  urodelo: urodeloImg,
+  walshie: walshieImg,
 };
+
 
 // Normaliza chave de legado (remove acento e deixa minúsculo)
 function normalizarLegadoKey(valor: string): string {
