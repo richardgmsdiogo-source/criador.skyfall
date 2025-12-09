@@ -15,6 +15,13 @@ const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
+// Decide para onde o build vai:
+// - Local / Manus: dist/public
+// - GitHub Pages: docs (que é o que o Pages está tentando usar)
+const outDir = isGitHubPages
+  ? path.resolve(__dirname, "docs")
+  : path.resolve(__dirname, "dist/public");
+
 export default defineConfig({
   plugins,
   base: isGitHubPages ? "/skyfall/" : "/", // local funciona normal, Pages usa /skyfall/
@@ -29,8 +36,7 @@ export default defineConfig({
   // projeto React está dentro de /client
   root: path.resolve(__dirname, "client"),
   build: {
-    // saída final que o workflow vai publicar
-    outDir: path.resolve(__dirname, "dist/public"),
+    outDir,
     emptyOutDir: true,
   },
   server: {
