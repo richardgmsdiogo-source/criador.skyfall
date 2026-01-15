@@ -2,6 +2,14 @@ import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
+import Groq from "groq-sdk";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY,
+});
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,6 +25,28 @@ async function startServer() {
       : path.resolve(__dirname, "..", "dist", "public");
 
   app.use(express.static(staticPath));
+  app.use(express.json());
+
+  // Groq API route
+  app.post("/api/groq", async (req, res) => {
+    try {
+      const { messages } = req.body;
+      
+      if (!process.env.GROQ_API_KEY) {
+        return res.status(500).json({ error: "GROQ_API_KEY is not set" });
+      }
+
+      const completion = await groq.chat.completions.create({
+        messages: messages,
+        model: "llama-3.3-70b-versatile",
+      });
+
+      res.json(completion.choices[0].message);
+    } catch (error: any) {
+      console.error("Groq API error:", error);
+      res.status(500).json({ error: error.message });
+    }
+  });
 
   // Handle client-side routing - serve index.html for all routes
   app.get("*", (_req, res) => {

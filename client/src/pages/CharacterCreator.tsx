@@ -12,6 +12,7 @@ import StepAntecedent from './StepAntecedent';
 import Step3Class from './Step3Class';
 import Step5Attributes from './Step5Attributes';
 import Step6Summary from './Step6Summary';
+import GroqAssistant from '@/components/GroqAssistant';
 
 const TOTAL_STEPS = 7;
 
@@ -107,6 +108,9 @@ export default function CharacterCreator() {
           )}
         </div>
       </main>
+
+      {/* Assistente de IA */}
+      <GroqAssistant />
 
       {/* Estilos de Animação */}
       <style>{`
